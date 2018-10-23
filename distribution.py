@@ -45,11 +45,18 @@ sen1=(sen1.lower())
 len1=len(sen1)
 g = ""
 num= []
+print('The distribution of characters in "'+ sen1 + '" is: ')
 
 for i in alphabet:
     if sen1.count(i) !=0:
         g=(sen1.count(i))*(i)
         num.append(g)
+num.sort()
+
+k = (sorted(num, key = len, reverse = True))
+for c in k:
+    print(c)
+
 
 
 
