@@ -1,7 +1,7 @@
 """
 distribution.py
 Author: <your name here>
-Credit: https://www.tutorialspoint.com/How-to-remove-all-special-characters-punctuation-and-spaces-from-a-string-in-Python    
+Credit: Tristan Meyer helped me
 
 Assignment:
 
@@ -36,18 +36,20 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
+import string
+alphabet = list(string.ascii_lowercase)
+
 sen=str(input('Please enter a string of text (the bigger the better): '))
 sen1=''.join(e for e in sen if e.isalnum())
-sen2=(sen1.lower())
-sen3=list(sen2)
+sen1=(sen1.lower())
+len1=len(sen1)
+g = ""
 num= []
-for i in "abcdefghijklmnopqrstuvwxyz":
-    if i in sen3:
-        num.append(sen3.count(i))
 
-
-num1,sen4 = list((zip(list(t) for t in zip(*sorted(zip(num, sen3))))
-both = list((zip(num1,sen4)))
+for i in alphabet:
+    if sen1.count(i) !=0:
+        g=(sen1.count(i))*(i)
+        num.append(g)
 
 
 
