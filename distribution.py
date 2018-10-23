@@ -1,6 +1,6 @@
 """
 distribution.py
-Author: <your name here>
+Author: Kyle Rozzi
 Credit: Tristan Meyer helped me
 
 Assignment:
