@@ -45,7 +45,7 @@ sen1=(sen1.lower())
 len1=len(sen1)
 g = ""
 num= []
-print('The distribution of characters in "'+ sen1 + '" is: ')
+print('The distribution of characters in "'+ sen +'" is: ')
 
 for i in alphabet:
     if sen1.count(i) !=0:
